@@ -2,7 +2,7 @@ grid = [' - ', ' - ', ' - ',
         ' - ', ' - ', ' - ',
         ' - ', ' - ', ' - ']
 
-game_active = True
+game_active = True  #Boolean to determine if game is active or finished
 
 
 def display_game_area():
@@ -27,10 +27,21 @@ def current_player_input():
     display_game_area()
 
 
+def has_game_finished():
+    check_if_winner():
+    check_if_draw():
+
+
+def check_if_winner():
+    # def check_row():
+
+# def check_column():
+
+# def check_diagonal():
+
+def check_if_draw():
+
 # def change_player():
-
-
-# def has_game_finished():
 
 
 def play_game():
@@ -50,17 +61,5 @@ def play_game():
 
 play_game()
 
-
-# Initial Code functions required:
-
-# def check_if_winner():
-
-# def check_row():
-
-# def check_column():
-
-# def check_diagonal():
-
-# def check_if_draw():
 
 # def restart_game():
