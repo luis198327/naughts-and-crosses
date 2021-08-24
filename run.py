@@ -37,15 +37,19 @@ def has_game_finished():
 
 
 def check_if_winner():
-    # def check_row():
+    return
+
+# def check_row():
 
 # def check_column():
 
 # def check_diagonal():
 
 def check_if_draw():
+    return
 
-# def change_player():
+def change_player():
+    return
 
 
 def play_game():
@@ -53,14 +57,14 @@ def play_game():
     Start game
     """
     display_game_area()
-    
+
     while game_active:
-        
+
         current_player_input()
 
-        has_game_finished():
+        has_game_finished()
 
-        change_player():
+        change_player()
 
 
 play_game()
