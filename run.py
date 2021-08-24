@@ -1,8 +1,23 @@
+grid = [' - ', ' - ', ' - ',
+        ' - ', ' - ', ' - ',
+        ' - ', ' - ', ' - ']
+
+
+def display_game_area():
+    """
+    Display and print the gaming area
+    """
+    print('| ' + grid[0] + ' | ' + grid[1] + ' | ' + grid[2] + ' | ')
+    print('| ' + grid[3] + ' | ' + grid[4] + ' | ' + grid[5] + ' | ')
+    print('| ' + grid[6] + ' | ' + grid[7] + ' | ' + grid[8] + ' | ')
+
+
+display_game_area()
+
 # Initial Code functions required:
 
 # def play_game():
 
-# def display_game_area():
 
 # def current_player_input():
 
