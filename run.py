@@ -28,8 +28,12 @@ def current_player_input():
 
 
 def has_game_finished():
-    check_if_winner():
-    check_if_draw():
+    """
+    Function that checks if the game has been won or drawn
+    by running two further functions.
+    """
+    check_if_winner()
+    check_if_draw()
 
 
 def check_if_winner():
