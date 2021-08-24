@@ -12,11 +12,18 @@ def display_game_area():
     print('| ' + grid[6] + ' | ' + grid[7] + ' | ' + grid[8] + ' | ')
 
 
-display_game_area()
+def play_game():
+    """
+    Start game
+    """
+    display_game_area()
+
+
+play_game()
 
 # Initial Code functions required:
 
-# def play_game():
+
 
 
 # def current_player_input():
