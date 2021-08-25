@@ -68,9 +68,9 @@ def check_row():
     """
     global game_active
 
-    row1 = grid[0] == grid[1] == grid[2]
-    row2 = grid[3] == grid[4] == grid[5]
-    row3 = grid[6] == grid[7] == grid[8]
+    row1 = grid[0] == grid[1] == grid[2] != ' - '
+    row2 = grid[3] == grid[4] == grid[5] != ' - '
+    row3 = grid[6] == grid[7] == grid[8] != ' - '
 
     if row1 or row2 or row3:
         game_active = False
@@ -95,9 +95,9 @@ def check_column():
     """
     global game_active
 
-    col1 = grid[0] == grid[3] == grid[6]
-    col2 = grid[1] == grid[4] == grid[7]
-    col3 = grid[2] == grid[5] == grid[8]
+    col1 = grid[0] == grid[3] == grid[6] != ' - '
+    col2 = grid[1] == grid[4] == grid[7] != ' - '
+    col3 = grid[2] == grid[5] == grid[8] != ' - '
 
     if col1 or col2 or col3:
         game_active = False
@@ -122,8 +122,8 @@ def check_diagonal():
     """
     global game_active
 
-    diag1 = grid[0] == grid[4] == grid[8]
-    diag2 = grid[2] == grid[4] == grid[6]
+    diag1 = grid[0] == grid[4] == grid[8] != ' - '
+    diag2 = grid[2] == grid[4] == grid[6] != ' - '
 
     if diag1 or diag2:
         game_active = False
@@ -158,9 +158,9 @@ def play_game():
 
         change_player()
 
-    if win == "X":
+    if win == " X ":
         print("Player " + win + " won.")
-    elif win == "O":
+    elif win == " O ":
         print("Player " + win + " won.")
     else:
         print("The game has ended in a draw.")
