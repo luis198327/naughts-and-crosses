@@ -37,14 +37,6 @@ def has_game_finished():
     check_if_draw()
 
 
-if win == "X":
-    print("Player " + win + " won.")
-elif win == "O":
-    print("Player " + win + " won.")
-else:
-    print("The game has ended in a draw.")
-
-
 def check_if_winner():
     """
     Function to check if the game has been won by either
@@ -135,6 +127,13 @@ def play_game():
         has_game_finished()
 
         change_player()
+
+    if win == "X":
+        print("Player " + win + " won.")
+    elif win == "O":
+        print("Player " + win + " won.")
+    else:
+        print("The game has ended in a draw.")
 
 
 play_game()
