@@ -120,6 +120,9 @@ Google Chrome Dev tools have been used and the responsiveness seems to be fine o
 
 #### Issues I Overcome
 + I kept receiving the error of "Assigning result of a function call, where the function has no return" and was getting confused.  I was convinced this was missing code somewhere and was adding additional functionality to the logic of the game but was failing to remove this error.  But I then realised that the check_if_winner function was setting a local variable of win_by_row for example, where the result of check_row function wasn't returning a value, which I believe what was meant by this error message.  I then added an if/else statement to the check_row function so that this outputs the character in the winning grid slot(s), depending on the winning row etc.  The error then was removed, apart from standard syntax rules i forgot to apply such as removing white space and 4 spaces for indention.
++ After fixing the above issue, I was able to run the game but after inputting the first grid slot integer, the game was declared as a draw. I realised that it must have recognised the dash "-" as a valid game character.  I therefore added the not equal to (!=) condition to the same 3 functions as in the first issue i overcame above.
+
+When i then ran the game following this fix, it didn't immediate prompt the game had been drawn which was great.  However, when I had then entered 3 grid slots, to mean a winning row was achieved, the message printed back was still a draw.  I realised that I had to update the if/else statement in the play_game function so that the character of X or O had a space either side ie... " X " rather than "X", so this matches the exact grid spacing.  When running the game again, the issue was fixed and the message correctly displayed Player X had won.  
 
 ### Known Bugs And Improvements   
 + 
