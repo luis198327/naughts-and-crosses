@@ -74,7 +74,21 @@ def check_row():
         game_active = False
 
 
-# def check_column():
+def check_column():
+    """
+    Check to see if there is a winning column. Checks to see if
+    each grid index is the same in each column. Sets the
+    global variable to False if there is a match to end game.
+    """
+    global game_active
+
+    col1 = grid[0] == grid[3] == grid[6]
+    col2 = grid[1] == grid[4] == grid[7]
+    col3 = grid[2] == grid[5] == grid[8]
+
+    if col1 or col2 or col3:
+        game_active = False
+
 
 # def check_diagonal():
 
