@@ -124,6 +124,13 @@ def check_diagonal():
     if diag1 or diag2:
         game_active = False
 
+    if diag1:
+        return grid[0]
+    elif diag2:
+        return grid[2]
+    else:
+        return None
+
 
 def check_if_draw():
     return
