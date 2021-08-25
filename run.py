@@ -99,6 +99,15 @@ def check_column():
     if col1 or col2 or col3:
         game_active = False
 
+    if col1:
+        return grid[0]
+    elif col2:
+        return grid[1]
+    elif col3:
+        return grid[2]
+    else:
+        return None
+
 
 def check_diagonal():
     """
