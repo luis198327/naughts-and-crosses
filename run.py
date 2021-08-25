@@ -60,10 +60,11 @@ def check_if_winner():
 
 def check_row():
     """
-    Check to see if there is a winning row. Checks to see if
-    each grid index is the same in each row. Sets the
-    global variable to False if there is a match to end game.
-    Returns the winning grid value (either X or)
+    Check to see if there is a winning row.
+    Checks to see if each grid index is the same in each
+    row. Sets the global variable to False if there is a
+    match to end game. And returns the character of the
+    winning grid slot.
     """
     global game_active
 
@@ -86,9 +87,11 @@ def check_row():
 
 def check_column():
     """
-    Check to see if there is a winning column. Checks to see if
-    each grid index is the same in each column. Sets the
-    global variable to False if there is a match to end game.
+    Check to see if there is a winning column.
+    Checks to see if each grid index is the same in each
+    column. Sets the global variable to False if there is
+    a match to end game. And returns the character of the
+    winning grid slot.
     """
     global game_active
 
@@ -111,10 +114,11 @@ def check_column():
 
 def check_diagonal():
     """
-    Check to see if there is a winning diagonal. Checks to
-    see if each grid index is the same in each diagonal.
-    Sets the global variable to False if there is a match
-    to end game.
+    Check to see if there is a winning diagonal.
+    Checks to see if each grid index is the same in each
+    diagonal. Sets the global variable to False if there
+    is a match to end game. And returns the character of the
+    winning grid slot.
     """
     global game_active
 
