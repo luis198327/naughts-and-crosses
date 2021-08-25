@@ -54,10 +54,24 @@ def check_if_winner():
     elif win_by_diagonal:
         win = check_diagonal()
     else:
-        win = None
-    return
+        win = None  
+    return win
 
-# def check_row():
+
+def check_row():
+    """
+    Check to see if there is a winning row. Checks to see if
+    each grid index is the same.
+    """
+    global game_active
+
+    row1 = grid[0] == grid[1] == grid[2]
+    row2 = grid[3] == grid[4] == grid[5]
+    row3 = grid[6] == grid[7] == grid[8]
+
+    if row1 or row2 or row3:
+        game_active = False
+
 
 # def check_column():
 
