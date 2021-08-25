@@ -48,13 +48,13 @@ def check_if_winner():
     win_by_diagonal = check_diagonal()
 
     if win_by_row:
-        win = check_row()
+        win = win_by_row
     elif win_by_column:
-        win = check_column()
+        win = win_by_column
     elif win_by_diagonal:
-        win = check_diagonal()
+        win = win_by_diagonal
     else:
-        win = None  
+        win = None
     return win
 
 
