@@ -61,7 +61,8 @@ def check_if_winner():
 def check_row():
     """
     Check to see if there is a winning row. Checks to see if
-    each grid index is the same.
+    each grid index is the same in each row. Sets the
+    global variable to False if there is a match to end game.
     """
     global game_active
 
