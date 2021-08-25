@@ -90,7 +90,20 @@ def check_column():
         game_active = False
 
 
-# def check_diagonal():
+def check_diagonal():
+    """
+    Check to see if there is a winning diagonal. Checks to
+    see if each grid index is the same in each diagonal.
+    Sets the global variable to False if there is a match
+    to end game.
+    """
+    global game_active
+
+    diag1 = grid[0] == grid[4] == grid[8]
+    diag2 = grid[2] == grid[4] == grid[6]
+
+    if diag1 or diag2:
+        game_active = False
 
 
 def check_if_draw():
