@@ -119,7 +119,7 @@ I have tested this on Google Chrome, Firefox, and Microsoft Edge browsers and no
 Google Chrome Dev tools have been used and the responsiveness seems to be fine on all mobile and table devices provided as part of Dev Tools, and a general responsiveness check with different widths and heights also seem fine.  I have checked the screen width as low as a Galaxy Fold set at 280px wide.
 
 #### Issues I Overcome
-+ 
++ I kept receiving the error of "Assigning result of a function call, where the function has no return" and was getting confused.  I was convinced this was missing code somewhere and was adding additional functionality to the logic of the game but was failing to remove this error.  But I then realised that the check_if_winner function was setting a local variable of win_by_row for example, where the result of check_row function wasn't returning a value, which I believe what was meant by this error message.  I then added an if/else statement to the check_row function so that this outputs the character in the winning grid slot(s), depending on the winning row etc.  The error then was removed, apart from standard syntax rules i forgot to apply such as removing white space and 4 spaces for indention.
 
 ### Known Bugs And Improvements   
 + 

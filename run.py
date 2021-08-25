@@ -63,6 +63,7 @@ def check_row():
     Check to see if there is a winning row. Checks to see if
     each grid index is the same in each row. Sets the
     global variable to False if there is a match to end game.
+    Returns the winning grid value (either X or)
     """
     global game_active
 
@@ -72,6 +73,15 @@ def check_row():
 
     if row1 or row2 or row3:
         game_active = False
+
+    if row1:
+        return grid[0]
+    elif row2:
+        return grid[3]
+    elif row3:
+        return grid[6]
+    else:
+        return None
 
 
 def check_column():
