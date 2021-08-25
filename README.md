@@ -93,6 +93,7 @@ Additional features that I would like to include in a future release would be to
 + [PEP8 Online](http://pep8online.com/) - used to check the validity of my Python code in my project.
 + [Python Tutor](http://www.pythontutor.com/) - used to check my Python code in the project. 
 + [Ecotrust](https://ecotrust-canada.github.io/markdown-toc/) - used to create contents page for README.md file.
++ [Python course](https://www.python-course.eu/python3_global_vs_local_variables.php).
 
 ## Testing
 ### Testing User Stories From User Experience Section
