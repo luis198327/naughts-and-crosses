@@ -2,7 +2,7 @@ grid = [' - ', ' - ', ' - ',
         ' - ', ' - ', ' - ',
         ' - ', ' - ', ' - ']
 
-game_active = True  #Boolean to determine if game is active or finished
+game_active = True  # Boolean to determine if game is active or finished
 
 
 def display_game_area():
@@ -37,6 +37,24 @@ def has_game_finished():
 
 
 def check_if_winner():
+    """
+    Function to check if the game has been won by either matching
+    3 in a row, column or in a diagonal.
+    """
+    win = None
+
+    win_by_row = check_row()
+    win_by_column = check_column()
+    win_by_diagonal = check_diagonal()
+
+    if win_by_row:
+        win = check_row()
+    elif win_by_column:
+        win = check_column()
+    elif win_by_diagonal:
+        win = check_diagonal()
+    else:
+        win = None
     return
 
 # def check_row():
@@ -45,8 +63,10 @@ def check_if_winner():
 
 # def check_diagonal():
 
+
 def check_if_draw():
     return
+
 
 def change_player():
     return
