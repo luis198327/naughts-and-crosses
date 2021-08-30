@@ -24,7 +24,7 @@ def current_player_input():
     """
     grid_slot = int(input("\nEnter grid number between 1-9:\n"))-1
 
-    grid[grid_slot] = ' X '
+    grid[grid_slot] = player
 
     display_game_area()
 
