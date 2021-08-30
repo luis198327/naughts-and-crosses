@@ -25,7 +25,8 @@ def current_player_input():
     grid slot has already been chosen. If all validation passes,
     the 'X' or 'O' character is placed in the grid slot chosen.
     """
-    grid_slot = input("\nEnter grid number between 1-9:\n")
+    print("\nPlayer" + player + "turn")
+    grid_slot = input("Enter grid number between 1-9:\n")
 
     valid_input = False
 
@@ -183,12 +184,12 @@ def play_game():
     """
     Start game
     """
-    print("Welcome to naughts and crosses.")
-    print("How to play.")
+    print("Welcome to Naughts & Crosses!\n")
+    print("\033[1m" + "How to play." + "\033[0m")
     print("Enter a grid number between 1-9.")
     print("Grid numbers go left to right starting on the top row.")
-    print("Slot 1 is the top left position and slot 9 is the bottom right.")
-    print("Player X goes first. Good luck!\n")
+    print("Number 1 is the top left position & number 9 is the bottom right.")
+    print("\nPlayer X goes first. Good luck!\n")
 
     display_game_area()
 
