@@ -19,17 +19,28 @@ def display_game_area():
 def current_player_input():
     """
     Request current player to input their grid slot within the
-    grid area. Checks to see if this is a valid input between 1-9.
-    Then changes input to integer and minus one to get correct
-    index from grid list. Places character in grid slot.
+    grid area. Validation checks to ensure the input number is
+    between 1-9. Converts this to an integer (and minus one to
+    get correct index from grid list). Checks to see if
+    grid slot has already been chosen. If all validation passes,
+    the 'X' or 'O' character is placed in the grid slot chosen.
     """
     grid_slot = input("\nEnter grid number between 1-9:\n")
-# check to see how to reduce the code
-    while grid_slot not in ['1', '2', '3', '4', '5', '6', '7', '8', '9']:
-        print("\nValue not accepted.")
-        input("Please enter grid number between 1-9:\n")
 
-    grid_slot = int(grid_slot) - 1
+    valid_input = False
+
+    while not valid_input:
+        # check to see how to reduce the code
+        while grid_slot not in ['1', '2', '3', '4', '5', '6', '7', '8', '9']:
+            print("Value not accepted.")
+            grid_slot = input("\nEnter grid number between 1-9:\n")
+
+        grid_slot = int(grid_slot) - 1
+
+        if grid[grid_slot] != ' - ':
+            print("Position already taken.")
+        else:
+            valid_input = True
 
     grid[grid_slot] = player
 
