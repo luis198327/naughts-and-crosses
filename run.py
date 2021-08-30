@@ -19,7 +19,8 @@ def display_game_area():
 def current_player_input():
     """
     Request current player to input their grid slot within the
-    grid area. Change to integer and minus one to get correct
+    grid area. Checks to see if this is a valid input between 1-9.
+    Then changes input to integer and minus one to get correct
     index from grid list. Places character in grid slot.
     """
     grid_slot = input("\nEnter grid number between 1-9:\n")

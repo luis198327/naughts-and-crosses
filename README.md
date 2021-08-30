@@ -124,6 +124,8 @@ Google Chrome Dev tools have been used and the responsiveness seems to be fine o
 
 When i then ran the game following this fix, it didn't immediate prompt the game had been drawn which was great.  However, when I had then entered 3 grid slots, to mean a winning row was achieved, the message printed back was still a draw.  I realised that I had to update the if/else statement in the play_game function so that the character of X or O had a space either side ie... " X " rather than "X", so this matches the exact grid spacing.  When running the game again, the issue was fixed and the message correctly displayed Player X had won.
 
++ I was having trouble in setting the validation within function current_player_input to only allow numbers 1-9 to be entered. It wasn't allowing me to run the while loop correctly. I have had to re-write the initial step to leave the input as a string before converting this to an integer. This appears to now be working ok. I may revisit this to look at a way to shorten the code (rather than using a list of all valid strings).
+
 + Minor issue i overcome was when setting the change_player logic, and then running the game the player's character didn't change as expected from ' X ' to ' O '. I realised I had forgotton to remove the ' X ' variables set in the current_player function. 
 
 ### Known Bugs And Improvements   
