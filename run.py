@@ -4,6 +4,7 @@ grid = [' - ', ' - ', ' - ',
 
 game_active = True  # Boolean to determine if game is active or finished
 win = None  # variable will be updated when a win is determined
+player = ' X '  # Sets the current player
 
 
 def display_game_area():
