@@ -22,7 +22,13 @@ def current_player_input():
     grid area. Change to integer and minus one to get correct
     index from grid list. Places character in grid slot.
     """
-    grid_slot = int(input("\nEnter grid number between 1-9:\n"))-1
+    grid_slot = input("\nEnter grid number between 1-9:\n")
+# check to see how to reduce the code
+    while grid_slot not in ['1', '2', '3', '4', '5', '6', '7', '8', '9']:
+        print("\nValue not accepted.")
+        input("Please enter grid number between 1-9:\n")
+
+    grid_slot = int(grid_slot) - 1
 
     grid[grid_slot] = player
 
