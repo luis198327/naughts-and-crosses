@@ -142,7 +142,17 @@ def check_if_draw():
 
 
 def change_player():
-    return
+    """
+    Function to check what the current player is and to
+    change the global variable to the other player's input
+    value in readiness for the next player's input.
+    """
+    global player
+
+    if player == ' X ':
+        player = ' O '
+    elif player == ' O ':
+        player = ' X '
 
 
 def play_game():
