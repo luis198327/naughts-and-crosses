@@ -138,7 +138,13 @@ def check_diagonal():
 
 
 def check_if_draw():
-    return
+    """
+    Function to check if the game has no winner
+    """
+    global game_active
+
+    if ' - ' not in grid:
+        game_active = False
 
 
 def change_player():

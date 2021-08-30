@@ -173,13 +173,14 @@ Or simply clone this repository directly into the editor of your choice by pasti
 + All content was written by the developer, unless referenced below.
 
 ### Code
-+ 
++ Googled how to try and define an if statement where it does not contain a piece of code to assist with the logic of setting the function if the game is drawn. Found the 'not in' statement to include from [Code Grepper](https://www.codegrepper.com/code-examples/python/python+string+not+contains) to write my code.
 
 ### Resources
 I used the following resources to obtain ideas for the game:
 
 + [Google](https://www.google.com/) - used for general searching
 + [Wikipedia](https://en.wikipedia.org/wiki/Tic-tac-toe)
++ [Code Grepper](https://www.codegrepper.com)
 
 I also used the following resources to bring inspiration on creating a command-line Python game:
 + 
