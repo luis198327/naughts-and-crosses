@@ -32,7 +32,7 @@ def current_player_input():
     while not valid_input:
         # check to see how to reduce the code
         while grid_slot not in ['1', '2', '3', '4', '5', '6', '7', '8', '9']:
-            print("Value not accepted.")
+            print("\nValue not accepted.")
             grid_slot = input("\nEnter grid number between 1-9:\n")
 
         grid_slot = int(grid_slot) - 1
@@ -194,11 +194,11 @@ def play_game():
         change_player()
 
     if win == " X ":
-        print("Player " + win + " won.")
+        print("\nPlayer " + win + " won.")
     elif win == " O ":
-        print("Player " + win + " won.")
+        print("\nPlayer " + win + " won.")
     else:
-        print("The game has ended in a draw.")
+        print("\nThe game has ended in a draw.")
 
 
 play_game()
