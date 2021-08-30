@@ -183,6 +183,13 @@ def play_game():
     """
     Start game
     """
+    print("Welcome to naughts and crosses.")
+    print("How to play.")
+    print("Enter a grid number between 1-9.")
+    print("Grid numbers go left to right starting on the top row.")
+    print("Slot 1 is the top left position and slot 9 is the bottom right.")
+    print("Player X goes first. Good luck!\n")
+
     display_game_area()
 
     while game_active:
