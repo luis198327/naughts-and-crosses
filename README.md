@@ -10,7 +10,7 @@ This project is for educational use only.
 
 The deployed version of my game is here -> [https://naughts-and-crosses-game.herokuapp.com/](https://naughts-and-crosses-game.herokuapp.com/ 
 
-<<screen shot>>
+![alt text](https://github.com/luis198327/naughts-and-crosses/blob/main/assets/images/responsive-site.JPG)
 
 ## User Experience
 
@@ -44,13 +44,29 @@ The players then have the option to either restart the game or to quit.
 
 ## Features
 + A welcome message and rules in how to play.
+
+![alt text](https://github.com/luis198327/naughts-and-crosses/blob/main/assets/images/game-welcome.JPG)
+
 + A gaming grid to show the gaming area, which updates and is shown once a valid entry is provided by the player.
+
 + A message to confirm who's turn it is each time.
 + Input validation.  Warnings will be provided to the user if their input:
     + Is off the grid and will provide a relevant message to confirm this and to ask for a new selection from the player
+
+    ![alt text](https://github.com/luis198327/naughts-and-crosses/blob/main/assets/images/validation-out-of-range1.JPG)
+
     + Is an invalid type (e.g a string). In other words, will only allow integers between 1-9, and not any other characters.
+
+    ![alt text](https://github.com/luis198327/naughts-and-crosses/blob/main/assets/images/validation-non-integer-value.JPG)
+
     + Has been previously selected, and will provide a message to confirm position already selected and to retry.
+
+    ![alt text](https://github.com/luis198327/naughts-and-crosses/blob/main/assets/images/validation-position-taken.JPG)
+
 + Message to display the result of the game - either a player has won or the game has been drawn.
+
+![alt text](https://github.com/luis198327/naughts-and-crosses/blob/main/assets/images/winning-move-across.JPG)
+
 + Option to restart the game or to quit.
 
 ### Features Left To Implement
