@@ -201,29 +201,26 @@ My project was developed using the IDE, Gitpod. I regularly commited my changes 
 + git commit - creates a commit, which are snapshots of my entire repository at specific times. 
 + git push - uploads all local branch commits to the corresponding remote branch.
 
-The site was deployed to GitHub pages. The project was deployed using Code Institute's mock terminal for Heroku.  
+The repository is saved within GitHub pages. This is then linked to Heroku and deployed via an app on this platform.  The project was deployed using Code Institute's mock terminal as per the project brief.  
 
 Steps to deploy are as follows:
 
-<<<<NEED TO REVIEW STEPS>>>>
-
 + Within Heroku, select:
-    + Create new app from the dashboard page
-    + Set the name of the app you are creating and the region you are in.
+    + Create new app from the dashboard page.
+    + Set the name of the app you are creating and the region you are in (needs to be a unique name).
     + Select create app.
     + Once this has been created, select the Settings tab and set the following:
         + Navigate to the Config Vars section.  For this deployment, no creds.json file was created. But in order to use the Code Institute template via Heroku, to improve compatibility a Config Var of Key = PORT, and Value = 8000 was added to the settings.
-        + Under Buildpacks section add the following dependancies that are needed outside of any saved under the requirements.txt file (saving each one in turn and ensuring they are in the following order):
+        + Under Buildpacks section, the following dependancies are needed outside of any saved under the requirements.txt file (saving each one in turn and ensuring they are in the following order):
             + Python
             + Nodejs
     + Scroll up and select the Deploy tab and set the following:
         + Under the Deployment Method, select GitHub.
-        + Then enter the GitHub repository name and click search.
+        + Then enter the GitHub repository name and click search. For this project, this is luis198327/naughts-and-crosses.
         + Once the repository is listed, click connect to link up the Heroku app to the Github repository code.
-        + Then choose whether to Automatically or Manually deploy the branch to this app. 
+        + Then choose whether to automatically or manually deploy the branch to this app. This has been set for automatic deployments. 
+        + Every push to main will deploy a new version of this app. If deploys happen automatically, be sure that this branch in GitHub is always in a deployable state and any tests have passed before you push.
         + The deployed URL is [here](https://naughts-and-crosses-game.herokuapp.com/)
-        <<<check before submitting>>>
-        + Every push to main will deploy a new version of this app. Deploys happen automatically but be sure that this branch in GitHub is always in a deployable state and any tests have passed before you push.
 
 ### Making A Local Clone
 You can clone this repository by:
