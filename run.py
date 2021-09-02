@@ -211,9 +211,9 @@ def play_game():
     """
     Start game
     """
-    print("Welcome to Naughts & Crosses!\n")
+    print("Welcome to Noughts & Crosses!\n")
     print("\033[1m" + "How to play." + "\033[0m")
-    print("Enter a grid number between 1-9.")
+    print("Enter a grid number between 1-9 and press the Enter key.")
     print("Grid numbers go left to right starting on the top row.")
     print("Number 1 is the top left position & number 9 is the bottom right.")
     print("\nPlayer X goes first. Good luck!\n")
