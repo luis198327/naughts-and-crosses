@@ -8,7 +8,7 @@ Noughts and Crosses game (or sometimes known as tic tac toe) is a 2 player game 
 
 This project is for educational use only.  
 
-The deployed version of my game is here -> [https://naughts-and-crosses-game.herokuapp.com/](https://naughts-and-crosses-game.herokuapp.com/ 
+The deployed version of my game is here -> [https://naughts-and-crosses-game.herokuapp.com/](https://naughts-and-crosses-game.herokuapp.com/) 
 
 ![alt text](https://github.com/luis198327/naughts-and-crosses/blob/main/assets/images/responsive-site.JPG)
 
@@ -89,7 +89,7 @@ Additional features that I would like to include in a future release would be to
 + [MS Publisher](https://www.microsoft.com/en-gb/microsoft-365/publisher) - used to create the basic process diagram in the design process of my game.
 + [W3Schools](https://www.w3schools.com/) - used for additional support and to get ideas for how to use code in my game. 
 + [PEP8 Online](http://pep8online.com/) - used to check the validity of my Python code in my project.
-+ [Python Tutor](http://www.pythontutor.com/) - used to check my Python code in the project. 
++ [Python Tutor](https://pythontutor.com/visualize.html#mode=edit) - used to check my Python code in the project. 
 + [Ecotrust](https://ecotrust-canada.github.io/markdown-toc/) - used to create contents page for README.md file.
 + [Python course](https://www.python-course.eu/python3_global_vs_local_variables.php).
 
@@ -130,7 +130,9 @@ In accordance with the features that have been implemented as described above, t
     + Not within the valid range of 1-9:
     
     ![alt text](https://github.com/luis198327/naughts-and-crosses/blob/main/assets/images/validation-out-of-range1.JPG)
+
     ![alt text](https://github.com/luis198327/naughts-and-crosses/blob/main/assets/images/validation-out-of-range2.JPG)
+    
     ![alt text](https://github.com/luis198327/naughts-and-crosses/blob/main/assets/images/validation-out-of-range3.JPG)
 
     + Grid slot position already taken:
@@ -167,7 +169,7 @@ In accordance with the features that have been implemented as described above, t
 #### Validation
 I used the PEP8online.com validation service to check the validity of my code.
 
-I used these during and at the end of the project to regularly identify issues.  Screenshots are as shown for each file:
+I used this during and at the end of the project to regularly identify issues.  Screenshots is shown with no issues identified with the code:
 
 ![alt text](https://github.com/luis198327/naughts-and-crosses/blob/main/assets/images/validation-pep8.JPG)
 
@@ -249,13 +251,13 @@ I used the following resources to obtain ideas for the game:
 + [Google](https://www.google.com/) - used for general searching
 + [Wikipedia](https://en.wikipedia.org/wiki/Tic-tac-toe)
 + [Code Grepper](https://www.codegrepper.com)
-+ [Edueka](https://www.edureka.co/
++ [Edueka](https://www.edureka.co/)
 
 I also used a couple of youtube videos to bring inspiration on creating a command-line Python game:
 
 + [YouTube](https://www.youtube.com/watch?v=n2o8ckO-lfk)
 + [YouTube](https://www.youtube.com/watch?v=BHh654_7Cmw&t=3176s)
-+ [YouTube]https://www.youtube.com/watch?v=tf3ezjeTpfI)
++ [YouTube](https://www.youtube.com/watch?v=tf3ezjeTpfI)
 
 ### Acknowledgements
 + I used the Code Institute GitHub template as a basis for setting up my repository, which will allow the game to played using the Code Institute mock terminal on Heroku.
