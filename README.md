@@ -126,6 +126,8 @@ When i then ran the game following this fix, it didn't immediate prompt the game
 
 + I was having trouble in setting the validation within function current_player_input to only allow numbers 1-9 to be entered. It wasn't allowing me to run the while loop correctly. I have had to re-write the initial step to leave the input as a string before converting this to an integer. This appears to now be working ok. I may revisit this to look at a way to shorten the code (rather than using a list of all valid strings).
 
++ I wanted to implement a restart game function. This would mean a better user experience giving them the option challenge their opponnent again. I was having troubles implementing this as researching online I was finding suggestions on how to do this but these were not working or were only partially working. For example, I managed to code the game to restart but this would keep the original game grid and therefore immediately print the previous game result. Having tried a few different solutions I managed to set this function correctly, although there might be an easier and better way to code this. Something maybe to consider in a future release.  I used and combined a couple of solutions that I found online.  These can be found in the code section below.
+
 + Minor issue i overcome was when setting the change_player logic, and then running the game the player's character didn't change as expected from ' X ' to ' O '. I realised I had forgotton to remove the ' X ' variables set in the current_player function. 
 
 ### Known Bugs And Improvements   
@@ -176,6 +178,10 @@ Or simply clone this repository directly into the editor of your choice by pasti
 
 ### Code
 + Googled how to try and define an if statement where it does not contain a piece of code to assist with the logic of setting the function if the game is drawn. Found the 'not in' statement to include from [Code Grepper](https://www.codegrepper.com/code-examples/python/python+string+not+contains) to write my code.
++ In order to get the restart game function to work succesfully, I used and combined a couple of resources I found online.  These were:
+
+    + [Edueka](https://www.edureka.co/community/21051/how-to-exit-a-python-script-in-an-if-statement) - to set the if statement correctly inside a while loop which I wasn't doing in previous attempts, and 
+    + [Code Grepper](https://www.codegrepper.com/code-examples/python/os.execl%28sys.executable%2C+sys.executable%2C+%2Asys.argv%29) - to fully restart the game, although I also reinserted the grid list manually too to get the restart function to work correctly.
 
 ### Resources
 I used the following resources to obtain ideas for the game:
@@ -183,9 +189,13 @@ I used the following resources to obtain ideas for the game:
 + [Google](https://www.google.com/) - used for general searching
 + [Wikipedia](https://en.wikipedia.org/wiki/Tic-tac-toe)
 + [Code Grepper](https://www.codegrepper.com)
++ [Edueka](https://www.edureka.co/
 
-I also used the following resources to bring inspiration on creating a command-line Python game:
-+ 
+I also used a couple of youtube videos to bring inspiration on creating a command-line Python game:
+
++ [Youtube](https://www.youtube.com/watch?v=n2o8ckO-lfk)
++ [Youtube](https://www.youtube.com/watch?v=BHh654_7Cmw&t=3176s)
++ [Youtube]https://www.youtube.com/watch?v=tf3ezjeTpfI)
 
 ### Acknowledgements
 + I used the Code Institute GitHub template as a basis for setting up my repository, which will allow the game to played using the Code Institute mock terminal on Heroku
