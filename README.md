@@ -1,6 +1,6 @@
 # Noughts and Crosses Game
 
-- [Contents](#contents)
+## Contents
 - [Code Institute Mile Stone 3 Project - Command-Line Application In Python](#code-institute-mile-stone-3-project---command-line-application-in-python)
 - [User Experience](#user-experience)
   * [Strategy - User Stories](#strategy---user-stories)
@@ -67,6 +67,7 @@ The game area is a 3 x 3 grid.  Each player in turn will be asked to input a num
  7 | 8 | 9 
 
 To win the game, a player must place three of their charatcters (either an 'X' or 'O') in a horizontal, vertical, or diagonal row.
+
 If the game is won, a message will be displayed to confirm which player has won.  The game will check this when each input has been accepted into the game area.  If all 9 game slots are filled and no one has won, a message will display to confirm the game has ended in a draw.
 
 Player 1 will use the character 'X' and Player 2 will use the character 'O'.
@@ -82,7 +83,7 @@ The players then have the option to either restart the game or to quit.
 
 + A message to confirm whose turn it is each time.
 + Input validation.  Warnings will be provided to the user if their input:
-    + Is off the grid and will provide a relevant message to confirm this and to ask for a new selection from the player
+    + Is off the grid and will provide a relevant message to confirm this and to ask for a new selection from the player.
 
     ![alt text](https://github.com/luis198327/naughts-and-crosses/blob/main/assets/images/validation-out-of-range1.JPG)
 
@@ -104,25 +105,25 @@ The players then have the option to either restart the game or to quit.
 Additional features that I would like to include in a future release would be to:
 
 + Make it a one player game so the user can play against the computer.
-+ Create the game so it has a better graphical representation of the game, Nautghts and Crosses.
++ Create the game so it has a better graphical representation of the game, Noughts and Crosses.
 + Include a scoring system to track the scores when multiple games are played in the same session before the exit game option is selected.
 + Add a quit game option throughout should either player wishes to forfeit.
 + For the code to be able to recognise a drawn game has been reached earlier, to prevent all 9 grid slots from having to be entered.
 
 ## Technologies Used
 ### Languages Used
-+ Python
++ Python.
 
 ### Frameworks Libraries And Programs Used
 + [GitPod](https://www.gitpod.io/) - used as the development environment for my website. I also used Git for Version Control in the project.
 + [GitHub](https://github.com/) - used to store the projects code after being pushed from GitPod.
-+ [Heroku](https://id.heroku.com/login) - used to deploy the game
++ [Heroku](https://id.heroku.com/login) - used to deploy the game.
 + [MS Publisher](https://www.microsoft.com/en-gb/microsoft-365/publisher) - used to create the basic process diagram in the design process of my game.
 + [W3Schools](https://www.w3schools.com/) - used for additional support and to get ideas for how to use code in my game. 
 + [PEP8 Online](http://pep8online.com/) - used to check the validity of my Python code in my project.
 + [Python Tutor](https://pythontutor.com/visualize.html#mode=edit) - used to check my Python code in the project. 
 + [Ecotrust](https://ecotrust-canada.github.io/markdown-toc/) - used to create contents page for README.md file.
-+ [Python course](https://www.python-course.eu/python3_global_vs_local_variables.php).
++ [Python course](https://www.python-course.eu/python3_global_vs_local_variables.php) - used to read up on local and global variables.
 
 ## Testing
 ### Testing User Stories From User Experience Section
@@ -198,9 +199,9 @@ In accordance with the features that have been implemented as described above, t
     ![alt text](https://github.com/luis198327/naughts-and-crosses/blob/main/assets/images/exit-game.JPG)
 
 #### Validation
-I used the PEP8online.com validation service to check the validity of my code.
+I used the [PEP8 Online](http://pep8online.com/) validation service to check the validity of my code.
 
-I used this during and at the end of the project to regularly identify issues.  Screenshots is shown with no issues identified with the code:
+I used this during and at the end of the project to regularly identify issues.  A screenshot is shown with no issues identified with the final deployed code:
 
 ![alt text](https://github.com/luis198327/naughts-and-crosses/blob/main/assets/images/validation-pep8.JPG)
 
@@ -210,6 +211,7 @@ As the GitHub template was created by Code Institute, no further testing has bee
 
 #### Issues I Overcome
 + I kept receiving the error of "Assigning result of a function call, where the function has no return" and was getting confused.  I was convinced this was missing code somewhere and was adding additional functionality to the logic of the game but was failing to remove this error.  But I then realised that the check_if_winner function was setting a local variable of win_by_row for example, where the result of check_row function wasn't returning a value, which I believe what was meant by this error message.  I then added an if/else statement to the check_row function so that this outputs the character in the winning grid slot(s), depending on the winning row etc.  The error then was removed, apart from standard syntax rules I forgot to apply such as removing white space and 4 spaces for indention.
+
 + After fixing the above issue, I was able to run the game but after inputting the first grid slot integer, the game was declared as a draw. I realised that it must have recognised the dash "-" as a valid game character.  I  therefore added the not equal to (!=) condition to the same 3 functions as in the first issue I overcame above.
 
     When I then ran the game following this fix, it didn't immediate prompt the game had been drawn which was great.  However, when I had then entered 3 grid slots, to mean a winning row was achieved, the message printed back was still a draw.  I realised that I had to update the if/else statement in the play_game function so that the character of X or O had a space either side ie... " X " rather than "X", so this matches the exact grid spacing.  When running the game again, the issue was fixed and the message correctly displayed Player X had won.
@@ -273,22 +275,22 @@ You can clone this repository by:
 + I googled how to try and define an if statement where it does not contain a piece of code to assist with the logic of setting the function if the game is drawn. Found the 'not in' statement to include from [Code Grepper](https://www.codegrepper.com/code-examples/python/python+string+not+contains) to write my code.
 + In order to get the restart game function to work succesfully, I used and combined a couple of resources I found online.  These were:
 
-    + [Edueka](https://www.edureka.co/community/21051/how-to-exit-a-python-script-in-an-if-statement) - to set the if statement correctly inside a while loop, which I wasn't doing in my previous attempts at writing this bit of code, and 
+    + [Edueka](https://www.edureka.co/community/21051/how-to-exit-a-python-script-in-an-if-statement) - to set the if statement correctly inside a while loop, which I wasn't doing in my previous attempts at writing this bit of code. 
     + [Code Grepper](https://www.codegrepper.com/code-examples/python/os.execl%28sys.executable%2C+sys.executable%2C+%2Asys.argv%29) - to fully restart the game, although I also reinserted the grid list manually too to get the restart function to work correctly.
 
 ### Resources
-I used the following resources to obtain ideas for the game:
+I used the following resources to obtain ideas and help for the game:
 
-+ [Google](https://www.google.com/) - used for general searching
++ [Google](https://www.google.com/)
 + [Wikipedia](https://en.wikipedia.org/wiki/Tic-tac-toe)
 + [Code Grepper](https://www.codegrepper.com)
 + [Edueka](https://www.edureka.co/)
 
 I also used a couple of youtube videos to bring inspiration on creating a command-line Python game:
 
-+ [YouTube](https://www.youtube.com/watch?v=n2o8ckO-lfk)
-+ [YouTube](https://www.youtube.com/watch?v=BHh654_7Cmw&t=3176s)
-+ [YouTube](https://www.youtube.com/watch?v=tf3ezjeTpfI)
++ [YouTube video 1 example](https://www.youtube.com/watch?v=n2o8ckO-lfk)
++ [YouTube video 2 example](https://www.youtube.com/watch?v=BHh654_7Cmw&t=3176s)
++ [YouTube video 3 example](https://www.youtube.com/watch?v=tf3ezjeTpfI)
 
 ### Acknowledgements
 + I used the Code Institute GitHub template as a basis for setting up my repository, which will allow the game to played using the Code Institute mock terminal on Heroku.
@@ -298,4 +300,4 @@ I also used a couple of youtube videos to bring inspiration on creating a comman
 
 ### Comments
 + If you wish to open an external link in a different tab in this README.md file, please press Crtl or Command + Click to do this.  Github prevents/doesn't allow those links to open in a new tab by default.
-+ The game's name on the deployed Heroku site and on GitHub pages was purposely spelt "Naughts" rather than "Noughts" to prevent any conflict with any similar game.
++ The game's name on the deployed Heroku site and on GitHub pages was purposely spelt "Naughts" rather than "Noughts".
