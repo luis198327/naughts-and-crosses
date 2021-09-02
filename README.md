@@ -112,7 +112,57 @@ Additional features that I would like to include in a future release would be to
     + The game can be restarted at the game conclusion so the player(s) can continue to challenge one another.
 
 ### Further Testing
+In accordance with the features that have been implemented as described above, the following tests have been carried out and passed:
 
++ Welcome message show and rules of the game:
+
+![alt text](https://github.com/luis198327/naughts-and-crosses/blob/main/assets/images/game-welcome.JPG)
+
++ Accepting a value, and prompting the next player to choose their grid slot:
+
+![alt text](https://github.com/luis198327/naughts-and-crosses/blob/main/assets/images/validation-accepted-value.JPG)
+
++ Validation checking to reject where:
+    + A non-integer value such as a letter(s) is given:
+    
+    ![alt text](https://github.com/luis198327/naughts-and-crosses/blob/main/assets/images/validation-non-integer-value.JPG)
+
+    + Not within the valid range of 1-9:
+    
+    ![alt text](https://github.com/luis198327/naughts-and-crosses/blob/main/assets/images/validation-out-of-range1.JPG)
+    ![alt text](https://github.com/luis198327/naughts-and-crosses/blob/main/assets/images/validation-out-of-range2.JPG)
+    ![alt text](https://github.com/luis198327/naughts-and-crosses/blob/main/assets/images/validation-out-of-range3.JPG)
+
+    + Grid slot position already taken:
+
+    ![alt text](https://github.com/luis198327/naughts-and-crosses/blob/main/assets/images/validation-position-taken.JPG)
+
++ Detects winning move no matter if its in a:
+
+    + Row:
+
+    ![alt text](https://github.com/luis198327/naughts-and-crosses/blob/main/assets/images/winning-move-across.JPG)
+
+    + Column:
+
+    ![alt text](https://github.com/luis198327/naughts-and-crosses/blob/main/assets/images/winning-move-down.JPG)
+
+    + Diagonal:
+
+    ![alt text](https://github.com/luis198327/naughts-and-crosses/blob/main/assets/images/winning-move-diagonal.JPG)
+
++ Detects if there is no winner once all grid slots have been filled:
+
+![alt text](https://github.com/luis198327/naughts-and-crosses/blob/main/assets/images/drawn-game.JPG)
+
++ Once the game has finished, a message is displayed to prompt the player if they wish to restart the game.  
+    + If Yes(Y) is selected, it will confirm its restarting and a new game will start:
+
+    ![alt text](https://github.com/luis198327/naughts-and-crosses/blob/main/assets/images/restart-game.JPG)
+
+    + If No(N) is selected, it will show a message to thank the players for playing before terminating the game:
+
+    ![alt text](https://github.com/luis198327/naughts-and-crosses/blob/main/assets/images/exit-game.JPG)
 
 #### Validation
 I used the PEP8online.com validation service to check the validity of my code.
