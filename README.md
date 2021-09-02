@@ -148,29 +148,33 @@ Steps to deploy are as follows:
 
 <<<<NEED TO REVIEW STEPS>>>>
 
-+ Within the GitHub repository, navigate to the Settings tab.
-+ Then select the Pages sub-menu option on the left, which takes you to GitHub Pages. 
-+ Within the source section drop-down menu, select Main (or Master Branch) and click on save.
-+ Once this has been saved, the page will confirm that the site is ready to be published and provides the URL address.
-+ Refreshing the page will confirm the website has been deployed, again providing the URL address.
-+ The deployed URL is <<<provide URL>>
-
-The deployed site will update automatically upon new commits to the main (or master) branch. For the site to deploy correctly on GitHub pages, the landing page must be named index.html.
-
-<<<<NEED TO REVIEW STEPS>>>>
++ Within Heroku, select:
+    + Create new app from the dashboard page
+    + Set the name of the app you are creating and the region you are in.
+    + Select create app.
+    + Once this has been created, select the Settings tab and set the following:
+        + Navigate to the Config Vars section.  For this deployment, no creds.json file was created. But in order to use the Code Institute template via Heroku, to improve compatibility a Config Var of Key = PORT, and Value = 8000 was added to the settings.
+        + Under Buildpacks section add the following dependancies that are needed outside of any saved under the requirements.txt file (saving each one in turn and ensuring they are in the following order):
+            + Python
+            + Nodejs
+    + Scroll up and select the Deploy tab and set the following:
+        + Under the Deployment Method, select GitHub.
+        + Then enter the GitHub repository name and click search.
+        + Once the repository is listed, click connect to link up the Heroku app to the Github repository code.
+        + Then choose whether to Automatically or Manually deploy the branch to this app. 
+        + The deployed URL is [here](https://naughts-and-crosses-game.herokuapp.com/)
+        <<<check before submitting>>>
+        + Every push to main will deploy a new version of this app. Deploys happen automatically but be sure that this branch in GitHub is always in a deployable state and any tests have passed before you push.
 
 ### Making A Local Clone
 You can clone this repository by:
-+ Logging into GitHub and locate the GitHub Repository luis198327/olympics-quiz-game
++ Logging into GitHub and locate the GitHub Repository luis198327/naughts-and-crosses.
 + Under the repository name and with the Code tab displayed by default, click the dropdown "Code" option.
 + This will give you the option to copy the repository using HTTPS by clicking the copy button.
 + Open Git Bash.
 + Change the current working directory to the location where you want the cloned directory to be made.
-+ Type git clone and paste the URL i.e. $ git clone <<link to deployed site>>>.
++ Type git clone and paste the URL i.e. $ git clone https://github.com/luis198327/naughts-and-crosses.git.
 + Press Enter, and your local clone will be created.
-
-Or simply clone this repository directly into the editor of your choice by pasting $ git clone https://luis198327.github.io/olympics-quiz-game/ into your terminal. To cut ties with this GitHub repository, type git remote rm origin into the terminal.
-
 
 ## Credits
 ### Content
