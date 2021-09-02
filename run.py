@@ -29,7 +29,7 @@ def current_player_input():
     grid slot has already been chosen. If all validation passes,
     the 'X' or 'O' character is placed in the grid slot chosen.
     """
-    print("\nPlayer" + player + "turn")
+    print("\nYour go Player" + player)
     grid_slot = input("Enter grid number between 1-9:\n")
 
     valid_input = False
