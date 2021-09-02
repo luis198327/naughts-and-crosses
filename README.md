@@ -1,10 +1,10 @@
-# Naughts and Crosses Game
+# Noughts and Crosses Game
 
 ## Code Institute Mile Stone 3 Project - Command-Line Application In Python
 
 The Code Institute project brief was to build a command-line application using Python, that allows users to manage a common dataset about a particular domain.
 
-Naughts and Crosses game (or sometimes known as tic tac toe) is a 2 player game which runs in the Code Institute mock terminal on Heroku.
+Noughts and Crosses game (or sometimes known as tic tac toe) is a 2 player game which runs in the Code Institute mock terminal on Heroku.
 
 This project is for educational use only.  
 
@@ -16,7 +16,7 @@ The deployed version of my game is here -> [https://naughts-and-crosses-game.her
 
 ### Strategy - User Stories
 #### Site Owners Goals
-+ The Naughts and Crosses game is played on a 3 x 3 grid in which each player takes it in turn to place either a 'X' or 'O' character onto the grid.  The objective of the game is to get 3 of the same characters in a row/column/diagonal before their opponent, or at the very least to block their opponent from winning and enforcing a draw. 
++ The Noughts and Crosses game is played on a 3 x 3 grid in which each player takes it in turn to place either a 'X' or 'O' character onto the grid.  The objective of the game is to get 3 of the same characters in a row/column/diagonal before their opponent, or at the very least to block their opponent from winning and enforcing a draw. 
 + The application provides a platform for a two player input/gaming facility.
 
 #### External User Goals
@@ -96,9 +96,9 @@ Additional features that I would like to include in a future release would be to
 ## Testing
 ### Testing User Stories From User Experience Section
 #### Site Owners Goals
-+ The Naughts and Crosses game is played on a 3 x 3 grid in which each player takes it in turn to place either a 'X' or 'O' character onto the grid.  The objective of the game is to get 3 of the same characters in a row/column/diagonal before their opponent, or at the very least to block their opponent from winning and enforcing a draw. 
++ The Noughts and Crosses game is played on a 3 x 3 grid in which each player takes it in turn to place either a 'X' or 'O' character onto the grid.  The objective of the game is to get 3 of the same characters in a row/column/diagonal before their opponent, or at the very least to block their opponent from winning and enforcing a draw. 
     + The app deployed to Heroku will show the grid game and ask for user input and provide feedback throughout.
-    + The code has been created so that it meets conventional rules of naughts and crosses. A winning move can therefore be achieved in one of 3 rows, 3 columns or in the 2 possible diagonals.
+    + The code has been created so that it meets conventional rules of noughts and crosses. A winning move can therefore be achieved in one of 3 rows, 3 columns or in the 2 possible diagonals.
 
 + The application provides a platform for a two player input/gaming facility.
     + The game allows valid inputs from two players. The players turn is shown each time until the game has been completed.
@@ -106,7 +106,7 @@ Additional features that I would like to include in a future release would be to
 
 #### External User Goals
 + The application user wants to play a logic game.
-    + The user is able to play a standard naughts and crosses game using logic and skill in order to beat their opponent. 
+    + The user is able to play a standard noughts and crosses game using logic and skill in order to beat their opponent. 
 + The application user wants to be able to challenge their friend.
     + The game is a 2 player game, and allows each player to enter their move in turn until the game finishes.
     + The game can be restarted at the game conclusion so the player(s) can continue to challenge one another.
@@ -237,10 +237,10 @@ You can clone this repository by:
 + All content was written by the developer, unless referenced below.
 
 ### Code
-+ Googled how to try and define an if statement where it does not contain a piece of code to assist with the logic of setting the function if the game is drawn. Found the 'not in' statement to include from [Code Grepper](https://www.codegrepper.com/code-examples/python/python+string+not+contains) to write my code.
++ I googled how to try and define an if statement where it does not contain a piece of code to assist with the logic of setting the function if the game is drawn. Found the 'not in' statement to include from [Code Grepper](https://www.codegrepper.com/code-examples/python/python+string+not+contains) to write my code.
 + In order to get the restart game function to work succesfully, I used and combined a couple of resources I found online.  These were:
 
-    + [Edueka](https://www.edureka.co/community/21051/how-to-exit-a-python-script-in-an-if-statement) - to set the if statement correctly inside a while loop which I wasn't doing in previous attempts, and 
+    + [Edueka](https://www.edureka.co/community/21051/how-to-exit-a-python-script-in-an-if-statement) - to set the if statement correctly inside a while loop, which I wasn't doing in my previous attempts at writing this bit of code, and 
     + [Code Grepper](https://www.codegrepper.com/code-examples/python/os.execl%28sys.executable%2C+sys.executable%2C+%2Asys.argv%29) - to fully restart the game, although I also reinserted the grid list manually too to get the restart function to work correctly.
 
 ### Resources
@@ -258,10 +258,11 @@ I also used a couple of youtube videos to bring inspiration on creating a comman
 + [Youtube]https://www.youtube.com/watch?v=tf3ezjeTpfI)
 
 ### Acknowledgements
-+ I used the Code Institute GitHub template as a basis for setting up my repository, which will allow the game to played using the Code Institute mock terminal on Heroku
++ I used the Code Institute GitHub template as a basis for setting up my repository, which will allow the game to played using the Code Institute mock terminal on Heroku.
 + I used W3Schools to assist with some features and to develop my understanding.
 + I would like to thank my mentor Spencer Barriball for his review and ongoing support with this project.
 + This project is for educational use only and was created for the Code Institute Module of a command-line application using Python.
 
 ### Comments
-If you wish to open an external link in a different tab in this README.md file, please press Crtl or Command + Click to do this.  Github prevents/doesn't allow those links to open in a new tab by default.
++ If you wish to open an external link in a different tab in this README.md file, please press Crtl or Command + Click to do this.  Github prevents/doesn't allow those links to open in a new tab by default.
++ The game's name on the deployed Heroku site and on GitHub pages was purposely spelt "Naughts" rather than "Noughts" to prevent any conflict with any similar game.
