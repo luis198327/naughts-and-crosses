@@ -1,30 +1,3 @@
-
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
-
-## Reminders
-
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
-
-## Creating the Heroku app
-
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
-
-1. `heroku/python`
-2. `heroku/nodejs`
-
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
-
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
------
 # Naughts and Crosses Game
 
 ## Code Institute Mile Stone 3 Project - Command-Line Application In Python
@@ -35,7 +8,7 @@ Naughts and Crosses game (or sometimes known as tic tac toe) is a 2 player game 
 
 This project is for educational use only.  
 
-The deployed version of my game is here -> PROVIDE LINK 
+The deployed version of my game is here -> [https://naughts-and-crosses-game.herokuapp.com/](https://naughts-and-crosses-game.herokuapp.com/ 
 
 <<screen shot>>
 
@@ -43,7 +16,7 @@ The deployed version of my game is here -> PROVIDE LINK
 
 ### Strategy - User Stories
 #### Site Owners Goals
-+ The Naughts and Crosses game is played on a 3 x 3 grid in which each player takes it in turn to place either an 'X' or 'O' character onto the grid.  The objective of the game is to get 3 of the same characters in a row/column/diagonal before their opponent, or at the very least to block their opponent from winning and enforcing a tie game. 
++ The Naughts and Crosses game is played on a 3 x 3 grid in which each player takes it in turn to place either a 'X' or 'O' character onto the grid.  The objective of the game is to get 3 of the same characters in a row/column/diagonal before their opponent, or at the very least to block their opponent from winning and enforcing a draw. 
 + The application provides a platform for a two player input/gaming facility.
 
 #### External User Goals
@@ -51,9 +24,9 @@ The deployed version of my game is here -> PROVIDE LINK
 + The application user wants to be able to challenge their friend.
 
 ### Process Flow
-I used MS Publisher to create a basic process flow of the game to identify key steps/functions required throughout the game.
+I used MS Publisher to create a basic process flow of the game to identify key steps/functions required throughout the game. This has been saved as a PDF when adding to the assets directory.
 
-The process flow can be found [here](<<link to flow charts>>>
+The process flow can be found [here](https://github.com/luis198327/naughts-and-crosses/blob/main/assets/images/process_flow.pdf).
 
 ### How to Play
 The game area is a 3 x 3 grid.  Each player in turn will be asked to input a number between 1 - 9.  The inputted number corresponds to the numbers as showwn in the grid below:
@@ -67,12 +40,18 @@ If the game is won, a message will be displayed to confirm which player has won.
 
 Player 1 will use the character 'X' and Player 2 will use the character 'O'.
 
+The players then have the option to either restart the game or to quit. 
+
 ## Features
-<<<Add features>>>
++ A welcome message and rules in how to play.
++ A gaming grid to show the gaming area, which updates and is shown once a valid entry is provided by the player.
++ A message to confirm who's turn it is each time.
 + Input validation.  Warnings will be provided to the user if their input:
-    + Is off-grid and to ask for a new selection
-    + Is an invalid type (e.g a string)
-    + Has been previously selected
+    + Is off the grid and will provide a relevant message to confirm this and to ask for a new selection from the player
+    + Is an invalid type (e.g a string). In other words, will only allow integers between 1-9, and not any other characters.
+    + Has been previously selected, and will provide a message to confirm position already selected and to retry.
++ Message to display the result of the game - either a player has won or the game has been drawn.
++ Option to restart the game or to quit.
 
 ### Features Left To Implement
 Additional features that I would like to include in a future release would be to:
@@ -101,10 +80,20 @@ Additional features that I would like to include in a future release would be to
 ## Testing
 ### Testing User Stories From User Experience Section
 #### Site Owners Goals
++ The Naughts and Crosses game is played on a 3 x 3 grid in which each player takes it in turn to place either a 'X' or 'O' character onto the grid.  The objective of the game is to get 3 of the same characters in a row/column/diagonal before their opponent, or at the very least to block their opponent from winning and enforcing a draw. 
+    + The app deployed to Heroku will show the grid game and ask for user input and provide feedback throughout.
+    + The code has been created so that it meets conventional rules of naughts and crosses. A winning move can therefore be achieved in one of 3 rows, 3 columns or in the 2 possible diagonals.
 
++ The application provides a platform for a two player input/gaming facility.
+    + The game allows valid inputs from two players. The players turn is shown each time until the game has been completed.
+    + It is a terminal base game using deployed via Heroku.
 
 #### External User Goals
-
++ The application user wants to play a logic game.
+    + The user is able to play a standard naughts and crosses game using logic and skill in order to beat their opponent. 
++ The application user wants to be able to challenge their friend.
+    + The game is a 2 player game, and allows each player to enter their move in turn until the game finishes.
+    + The game can be restarted at the game conclusion so the player(s) can continue to challenge one another.
 
 ### Further Testing
 
