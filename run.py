@@ -35,7 +35,6 @@ def current_player_input():
     valid_input = False
 
     while not valid_input:
-        # check to see how to reduce the code
         while grid_slot not in ['1', '2', '3', '4', '5', '6', '7', '8', '9']:
             print("\nValue not accepted.")
             grid_slot = input("\nEnter grid number between 1-9:\n")
