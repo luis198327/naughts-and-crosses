@@ -49,13 +49,13 @@ The players then have the option to either restart the game or to quit.
 
 + A gaming grid to show the gaming area, which updates and is shown once a valid entry is provided by the player.
 
-+ A message to confirm who's turn it is each time.
++ A message to confirm whose turn it is each time.
 + Input validation.  Warnings will be provided to the user if their input:
     + Is off the grid and will provide a relevant message to confirm this and to ask for a new selection from the player
 
     ![alt text](https://github.com/luis198327/naughts-and-crosses/blob/main/assets/images/validation-out-of-range1.JPG)
 
-    + Is an invalid type (e.g a string). In other words, will only allow integers between 1-9, and not any other characters.
+    + Is an invalid type (e.g a string). In other words, it will only allow integers between 1-9, and not any other characters.
 
     ![alt text](https://github.com/luis198327/naughts-and-crosses/blob/main/assets/images/validation-non-integer-value.JPG)
 
@@ -137,7 +137,7 @@ In accordance with the features that have been implemented as described above, t
 
     ![alt text](https://github.com/luis198327/naughts-and-crosses/blob/main/assets/images/validation-position-taken.JPG)
 
-+ Detects winning move no matter if its in a:
++ Detects winning move no matter if it's in a:
 
     + Row:
 
@@ -177,7 +177,7 @@ As the GitHub template was created by Code Institute, no further testing has bee
 
 #### Issues I Overcome
 + I kept receiving the error of "Assigning result of a function call, where the function has no return" and was getting confused.  I was convinced this was missing code somewhere and was adding additional functionality to the logic of the game but was failing to remove this error.  But I then realised that the check_if_winner function was setting a local variable of win_by_row for example, where the result of check_row function wasn't returning a value, which I believe what was meant by this error message.  I then added an if/else statement to the check_row function so that this outputs the character in the winning grid slot(s), depending on the winning row etc.  The error then was removed, apart from standard syntax rules I forgot to apply such as removing white space and 4 spaces for indention.
-+ After fixing the above issue, I was able to run the game but after inputting the first grid slot integer, the game was declared as a draw. I realised that it must have recognised the dash "-" as a valid game character.  I  therefore added the not equal to (!=) condition to the same 3 functions as in the first issue i overcame above.
++ After fixing the above issue, I was able to run the game but after inputting the first grid slot integer, the game was declared as a draw. I realised that it must have recognised the dash "-" as a valid game character.  I  therefore added the not equal to (!=) condition to the same 3 functions as in the first issue I overcame above.
 
     When I then ran the game following this fix, it didn't immediate prompt the game had been drawn which was great.  However, when I had then entered 3 grid slots, to mean a winning row was achieved, the message printed back was still a draw.  I realised that I had to update the if/else statement in the play_game function so that the character of X or O had a space either side ie... " X " rather than "X", so this matches the exact grid spacing.  When running the game again, the issue was fixed and the message correctly displayed Player X had won.
 
@@ -185,7 +185,7 @@ As the GitHub template was created by Code Institute, no further testing has bee
 
 + I wanted to implement a restart game function. This would mean a better user experience giving them the option to challenge their opponnent again. I was having troubles implementing this as researching online I was finding suggestions on how to do this but these were not working or were only partially working. For example, I managed to code the game to restart but this would keep the original game grid and therefore immediately print the previous game result. Having tried a few different solutions I managed to set this function correctly, although there might be an easier and better way to code this. Something maybe to consider in a future release.  I used and combined a couple of solutions that I found online.  These can be found in the code section below.
 
-+ Minor issue i overcome was when setting the change_player logic, and then running the game the player's character didn't change as expected from ' X ' to ' O '. I realised I had forgotton to remove the ' X ' variables set in the current_player function. 
++ Minor issue I overcome was when setting the change_player logic, and then running the game the player's character didn't change as expected from ' X ' to ' O '. I realised I had forgotton to remove the ' X ' variables set in the current_player function. 
 
 ### Known Bugs And Improvements   
 There are no known bugs following testing of the game in GitPod or on the live deployed app via Heroku.
@@ -253,9 +253,9 @@ I used the following resources to obtain ideas for the game:
 
 I also used a couple of youtube videos to bring inspiration on creating a command-line Python game:
 
-+ [Youtube](https://www.youtube.com/watch?v=n2o8ckO-lfk)
-+ [Youtube](https://www.youtube.com/watch?v=BHh654_7Cmw&t=3176s)
-+ [Youtube]https://www.youtube.com/watch?v=tf3ezjeTpfI)
++ [YouTube](https://www.youtube.com/watch?v=n2o8ckO-lfk)
++ [YouTube](https://www.youtube.com/watch?v=BHh654_7Cmw&t=3176s)
++ [YouTube]https://www.youtube.com/watch?v=tf3ezjeTpfI)
 
 ### Acknowledgements
 + I used the Code Institute GitHub template as a basis for setting up my repository, which will allow the game to played using the Code Institute mock terminal on Heroku.
