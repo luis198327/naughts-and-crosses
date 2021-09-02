@@ -1,3 +1,7 @@
+import sys
+import os
+import time
+
 grid = [' - ', ' - ', ' - ',
         ' - ', ' - ', ' - ',
         ' - ', ' - ', ' - ']
@@ -180,6 +184,29 @@ def change_player():
         player = ' X '
 
 
+def restart_game():
+    """
+    Function which prompts the users if they wish to restart
+    the game. Answering yes with confirm game restarting,
+    resets the grid and then runs the game after a 2 second
+    delay. Answering no with quit the game.
+    """
+    global grid
+    while True:
+        answer = input("Restart game? Enter Y or N:\n")
+        if answer.lower().startswith("y"):
+            print("Game restarting...\n")
+            time.sleep(2)
+            grid = [' - ', ' - ', ' - ',
+                    ' - ', ' - ', ' - ',
+                    ' - ', ' - ', ' - ']
+            os.execl(sys.executable, sys.executable, *sys.argv)
+            play_game()
+        elif answer.lower().startswith("n"):
+            print("Thanks for playing!")
+            sys.exit()
+
+
 def play_game():
     """
     Start game
@@ -208,8 +235,7 @@ def play_game():
     else:
         print("\nThe game has ended in a draw.")
 
+    restart_game()
+
 
 play_game()
-
-
-# def restart_game():
