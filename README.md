@@ -77,8 +77,11 @@ Player 1 will use the character 'X' and Player 2 will use the character 'O'.
 ### Features Left To Implement
 Additional features that I would like to include in a future release would be to:
 
-+ To make it a one player game so the user can play against the computer.
-+ To create the game so it has a better graphical representation of the game, Nautghts and Crosses.
++ Make it a one player game so the user can play against the computer.
++ Create the game so it has a better graphical representation of the game, Nautghts and Crosses.
++ Include a scoring system to track the scores when multiple games are played in the same session before the exit game option is selected.
++ Add a quit game option throughout should either player wishes to forfeit.
++ For the code to be able to recognise a drawn game has been reached earlier, to prevent all 9 grid slots from having to be entered.
 
 ## Technologies Used
 ### Languages Used
