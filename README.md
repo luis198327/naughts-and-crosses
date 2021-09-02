@@ -1,5 +1,36 @@
 # Noughts and Crosses Game
 
+- [Contents](#contents)
+- [Code Institute Mile Stone 3 Project - Command-Line Application In Python](#code-institute-mile-stone-3-project---command-line-application-in-python)
+- [User Experience](#user-experience)
+  * [Strategy - User Stories](#strategy---user-stories)
+    + [Site Owners Goals](#site-owners-goals)
+    + [External User Goals](#external-user-goals)
+  * [Process Flow](#process-flow)
+  * [How to Play](#how-to-play)
+- [Features](#features)
+  * [Features Left To Implement](#features-left-to-implement)
+- [Technologies Used](#technologies-used)
+  * [Languages Used](#languages-used)
+  * [Frameworks Libraries And Programs Used](#frameworks-libraries-and-programs-used)
+- [Testing](#testing)
+  * [Testing User Stories From User Experience Section](#testing-user-stories-from-user-experience-section)
+    + [Site Owners Goals](#site-owners-goals-1)
+    + [External User Goals](#external-user-goals-1)
+  * [Further Testing](#further-testing)
+    + [Validation](#validation)
+    + [Issues I Overcome](#issues-i-overcome)
+  * [Known Bugs And Improvements](#known-bugs-and-improvements)
+- [Constraints](#constraints)
+- [Deployment](#deployment)
+  * [Making A Local Clone](#making-a-local-clone)
+- [Credits](#credits)
+  * [Content](#content)
+  * [Code](#code)
+  * [Resources](#resources)
+  * [Acknowledgements](#acknowledgements)
+  * [Comments](#comments)
+
 ## Code Institute Mile Stone 3 Project - Command-Line Application In Python
 
 The Code Institute project brief was to build a command-line application using Python, that allows users to manage a common dataset about a particular domain.
