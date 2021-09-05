@@ -39,6 +39,8 @@ Noughts and Crosses game (or sometimes known as tic tac toe) is a 2 player game 
 
 This project is for educational use only.  
 
+If you wish to open an external link in a different tab in this README file, please press Crtl or Command + Click to do this.  Github prevents/doesn't allow those links to open in a new tab by default.
+
 The deployed version of my game is here -> [https://naughts-and-crosses-game.herokuapp.com/](https://naughts-and-crosses-game.herokuapp.com/) 
 
 ![alt text](https://github.com/luis198327/naughts-and-crosses/blob/main/assets/images/responsive-site.JPG)
@@ -62,8 +64,10 @@ The process flow can be found [here](https://github.com/luis198327/naughts-and-c
 ### How to Play
 The game area is a 3 x 3 grid.  Each player in turn will be asked to input a number between 1 - 9.  The inputted number corresponds to the numbers as showwn in the grid below:
 
- 1 | 2 | 3 
+ 1 | 2 | 3
+
  4 | 5 | 6 
+
  7 | 8 | 9 
 
 To win the game, a player must place three of their charatcters (either an 'X' or 'O') in a horizontal, vertical, or diagonal row.
@@ -122,7 +126,7 @@ Additional features that I would like to include in a future release would be to
 + [W3Schools](https://www.w3schools.com/) - used for additional support and to get ideas for how to use code in my game. 
 + [PEP8 Online](http://pep8online.com/) - used to check the validity of my Python code in my project.
 + [Python Tutor](https://pythontutor.com/visualize.html#mode=edit) - used to check my Python code in the project. 
-+ [Ecotrust](https://ecotrust-canada.github.io/markdown-toc/) - used to create contents page for README.md file.
++ [Ecotrust](https://ecotrust-canada.github.io/markdown-toc/) - used to create contents page for README file.
 + [Python course](https://www.python-course.eu/python3_global_vs_local_variables.php) - used to read up on local and global variables.
 
 ## Testing
@@ -198,6 +202,8 @@ In accordance with the features that have been implemented as described above, t
 
     ![alt text](https://github.com/luis198327/naughts-and-crosses/blob/main/assets/images/exit-game.JPG)
 
+    + When testing this function, and with the time delay set to 2 seconds, I noticed that it was possible you could enter a keyboard input in this period and it would feature at the beginning of the welcome message.Or worse, if this was a valid input (1-9) and the Enter key is then pressed, this would take this as the first valid move in the next game. I wanted this delay so that the print message of "restarting game" would be easily seen and provide good UX.  But I could not see an easy way of fixing this and preventing keyand inputs during this delay.  Therefore rather than removing the print message, I decided to reduce the time delay to 0.5 seconds.
+
 #### Validation
 I used the [PEP8 Online](http://pep8online.com/) validation service to check the validity of my code.
 
@@ -218,7 +224,7 @@ As the GitHub template was created by Code Institute, no further testing has bee
 
 + I was having trouble in setting the validation within function current_player_input to only allow numbers 1-9 to be entered. It wasn't allowing me to run the while loop correctly. I have had to re-write the initial step to leave the input as a string before converting this to an integer. This appears to now be working ok. I may revisit this to look at a way to shorten the code (rather than using a list of all valid strings).
 
-+ I wanted to implement a restart game function. This would mean a better user experience giving them the option to challenge their opponnent again. I was having troubles implementing this as researching online I was finding suggestions on how to do this but these were not working or were only partially working. For example, I managed to code the game to restart but this would keep the original game grid and therefore immediately print the previous game result. Having tried a few different solutions I managed to set this function correctly, although there might be an easier and better way to code this. Something maybe to consider in a future release.  I used and combined a couple of solutions that I found online.  These can be found in the code section below.
++ I wanted to implement a restart game function. This would mean a better user experience giving them the option to challenge their opponnent again. I was having troubles implementing this as researching online I was finding suggestions on how to do this but these were not working or were only partially working. For example, I managed to code the game to restart but this would keep the original game grid and therefore immediately print the previous game result. Having tried a few different solutions I managed to set this function correctly, although there might be an easier and better way to code this. This maybe something to consider in a future release.  I used and combined a couple of solutions that I found online.  These can be found in the code section below. Refer to last point in further testing about the time delay being reduced too.
 
 + Minor issue I overcome was when setting the change_player logic, and then running the game the player's character didn't change as expected from ' X ' to ' O '. I realised I had forgotton to remove the ' X ' variables set in the current_player function. 
 
@@ -226,6 +232,10 @@ As the GitHub template was created by Code Institute, no further testing has bee
 There are no known bugs following testing of the game in GitPod or on the live deployed app via Heroku.
 
 The only improvements that I would like to make other than those listed in the features left to implement are to make the finished code more streamlined. For example to change the while loop within the current_player_input function so that it doesn't list all valid grid slots. While this is a short and simple game, I am aware this isn't the best solution as you wouldn't expect to code in this way especially if the game gets more complex. 
+
+One other thing to write up is that when testing on a mobile device, this was working fine but the restart function was working not working on occasions.  I am not sure why as I checked at different times without any further commits and it was working. I believe the Code Institute template and mock terminal built for browser usage may be unstable in some instances.  The following screen shot shows an example for when the game wasn't restarted successfully (ie by typing N in the command line.)
+
+![alt text](android-test-restart.jpg)
 
 ## Constraints
 As this used the Code Institute mock terminal, the deployed terminal is set to 80 columns by 24 rows. This means each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
@@ -299,5 +309,5 @@ I also used a couple of youtube videos to bring inspiration on creating a comman
 + This project is for educational use only and was created for the Code Institute Module of a command-line application using Python.
 
 ### Comments
-+ If you wish to open an external link in a different tab in this README.md file, please press Crtl or Command + Click to do this.  Github prevents/doesn't allow those links to open in a new tab by default.
++ If you wish to open an external link in a different tab in this README file, please press Crtl or Command + Click to do this.  Github prevents/doesn't allow those links to open in a new tab by default.
 + The game's name on the deployed Heroku site and on GitHub pages was purposely spelt "Naughts" rather than "Noughts".

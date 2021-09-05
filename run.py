@@ -187,7 +187,7 @@ def restart_game():
     """
     Function which prompts the users if they wish to restart
     the game. Answering yes with confirm game restarting,
-    resets the grid and then runs the game after a 2 second
+    resets the grid and then runs the game after a 0.5 second
     delay. Answering no with quit the game.
     """
     global grid
