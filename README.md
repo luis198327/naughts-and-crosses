@@ -202,7 +202,7 @@ In accordance with the features that have been implemented as described above, t
 
     ![alt text](https://github.com/luis198327/naughts-and-crosses/blob/main/assets/images/exit-game.JPG)
 
-    + When testing this function, and with the time delay set to 2 seconds, I noticed that it was possible you could enter a keyboard input in this period and it would feature at the beginning of the welcome message.Or worse, if this was a valid input (1-9) and the Enter key is then pressed, this would take this as the first valid move in the next game. I wanted this delay so that the print message of "restarting game" would be easily seen and provide good UX.  But I could not see an easy way of fixing this and preventing keyand inputs during this delay.  Therefore rather than removing the print message, I decided to reduce the time delay to 0.5 seconds.
+    + When testing this function, and with the time delay set to 2 seconds, I noticed that it was possible you could enter a keyboard input in this period and it would feature at the beginning of the welcome message. Or worse, if this was a valid input (1-9) and the Enter key is then pressed, this would take this as the first valid move in the next game. I wanted this delay so that the print message of "restarting game" would be easily seen and provide good UX.  But I could not see an easy way of fixing this and preventing keyand inputs during this delay.  Therefore rather than removing the print message, I decided to reduce the time delay to 0.5 seconds.
 
 #### Validation
 I used the [PEP8 Online](http://pep8online.com/) validation service to check the validity of my code.
@@ -211,7 +211,7 @@ I used this during and at the end of the project to regularly identify issues.  
 
 ![alt text](https://github.com/luis198327/naughts-and-crosses/blob/main/assets/images/validation-pep8.JPG)
 
-Although the GitHub template has been designed and created by Code Institute for the purposes of the Milestone 3 project, I have tested this on Google Chrome, Firefox, and Microsoft Edge browsers.  No issues with the code/behaviour of the game were found.  I have also tested this in production using an Android mobile.
+Although the GitHub template has been designed and created by Code Institute for the purposes of the Milestone 3 project, I have tested this on Google Chrome, Firefox, and Microsoft Edge browsers.  No issues with the code/behaviour of the game were found.  I have also tested this in production using an Android mobile (please refer to Known Bugs and Improvements section for a comment on mobile devices).
 
 As the GitHub template was created by Code Institute, no further testing has been carried out such as using Google Chrome Dev tools for responsiveness.
 
