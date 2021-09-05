@@ -233,9 +233,9 @@ There are no known bugs following testing of the game in GitPod or on the live d
 
 The only improvements that I would like to make other than those listed in the features left to implement are to make the finished code more streamlined. For example to change the while loop within the current_player_input function so that it doesn't list all valid grid slots. While this is a short and simple game, I am aware this isn't the best solution as you wouldn't expect to code in this way especially if the game gets more complex. 
 
-One other thing to write up is that when testing on a mobile device, this was working fine but the restart function was working not working on occasions.  I am not sure why as I checked at different times without any further commits and it was working. I believe the Code Institute template and mock terminal built for browser usage may be unstable in some instances.  The following screen shot shows an example for when the game wasn't restarted successfully (ie by typing N in the command line.)
+One other thing to write up is that when testing on a mobile device, this was working fine but the restart function was working not working on occasions.  I am not sure why as I checked at different times without any further commits and it was working. I believe the Code Institute template and mock terminal built for browser usage may be unstable in some instances.  The following screen shot shows an example for when the game was exited successfully (ie by typing N in the command line). On some occasions during testing, this would not accept any valid input and just keep repeatingly asking the restart question.
 
-![alt text](android-test-restart.jpg)
+![alt text](https://github.com/luis198327/naughts-and-crosses/blob/main/assets/images/android-test-restart.jpg)
 
 ## Constraints
 As this used the Code Institute mock terminal, the deployed terminal is set to 80 columns by 24 rows. This means each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
