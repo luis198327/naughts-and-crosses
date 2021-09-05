@@ -195,7 +195,7 @@ def restart_game():
         answer = input("Restart game? Enter Y or N:\n")
         if answer.lower().startswith("y"):
             print("Game restarting...\n")
-            time.sleep(0.2)
+            time.sleep(0.5)
             grid = [' - ', ' - ', ' - ',
                     ' - ', ' - ', ' - ',
                     ' - ', ' - ', ' - ']
